@@ -61,12 +61,14 @@
   </header>
 
   <main>
-    <form>
+    <form name="kontaktivorm" method="POST" data-netlify="true" action="thank-you.html">
+      <input type="hidden" name="form-name" value="kontaktivorm" />
+
       <label for="name">Nimi</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" id="name" name="name" required />
 
       <label for="message">Sõnum</label>
-      <textarea id="message" name="message" rows="5"></textarea>
+      <textarea id="message" name="message" rows="5" required></textarea>
 
       <button type="submit">Saada</button>
     </form>
