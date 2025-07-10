@@ -3,96 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sürrealistlik Leht</title>
+  <title>Surrealistlik Leht</title>
   <style>
+    :root {
+      --primary: #000;
+      --background: #ffffff;
+      --accent: #444;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background: #ffffff;
-      color: #000;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: var(--background);
+      color: var(--primary);
+      line-height: 1.6;
     }
 
     header {
+      padding: 4rem 2rem;
       text-align: center;
-      padding: 5rem 1rem 3rem;
-      background: #fff;
-      position: relative;
+      background: #f8f8f8;
     }
 
     header h1 {
       font-size: 3rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
       margin: 0;
     }
 
     header p {
-      margin-top: 1rem;
-      font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+      color: var(--accent);
     }
 
-    .art-element {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 120px;
-      opacity: 0.15;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
     }
 
     main {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      line-height: 1.6;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
     }
 
     h2 {
-      font-size: 1.6rem;
-      margin-top: 3rem;
-      border-bottom: 1px solid black;
-      padding-bottom: 0.3rem;
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--primary);
+      padding-left: 0.5rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
     }
 
     footer {
       text-align: center;
+      padding: 2rem;
       font-size: 0.9rem;
-      padding: 3rem 1rem;
-      background: #fff;
-      border-top: 1px solid black;
+      background: #f0f0f0;
+      margin-top: 4rem;
+    }
+
+    .hero-art {
+      max-width: 120px;
+      opacity: 0.1;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="art-element.svg" alt="Silmaelement" class="art-element" />
-<img src="art-wiiralt-disney.svg" alt="Wiiralt Disney" class="art-element" style="top: 6rem; left: 1rem;" />
+    <img src="art-element.svg" alt="Surreal Art" class="hero-art" />
     <h1>Su Nimi</h1>
-    <p>Unenägude ja loovuse piirimail</p>
+    <p>Loovus, kujutlusvõime ja sürrealism ühendatud digitaalselt</p>
   </header>
 
+  <nav>
+    <a href="index.html">Avaleht</a>
+    <a href="services.html">Teenused</a>
+    <a href="gallery.html">Galerii</a>
+    <a href="blog.html">Blogi</a>
+    <a href="feedback.html">Tagasiside</a>
+  </nav>
+
   <main>
-    <h2>Minust</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ma olen kui kell ilma numbriteta, mis sulab ajas.</p>
+    <section>
+      <h2>Minust</h2>
+      <p>Olen loov isiksus, kelle kirg on luua tähenduslikke visuaale ja lahendusi, mis peegeldavad meie alateadvust. Minu töödes põimuvad klassikaline graafika, digitaalne disain ja sürrealistlik maailmatunnetus.</p>
+    </section>
 
-    <h2>Teenused</h2>
-    <ul>
-      <li>Visuaalne identiteet ja sümbolite disain</li>
-      <li>Tekstide maailm: peegeldused ja sõnamängud</li>
-      <li>Veebilehtede loomine tundega</li>
-    </ul>
+    <section>
+      <h2>Teenused</h2>
+      <ul>
+        <li>Veebidisain ja bränding</li>
+        <li>Sümbolistlikud illustratsioonid ja graafika</li>
+        <li>Kunstipõhine nõustamine ja visuaalne kontseptsioon</li>
+      </ul>
+    </section>
 
-    <h2>Kontakt</h2>
-    <p>Email: kontakt@example.com<br/>
-       Telefon: +372 5555 1234</p>
+    <section>
+      <h2>Kontakt</h2>
+      <p>Soovid koostööd või arutada ideed? <a href="feedback.html">Saada sõnum</a>.</p>
+    </section>
   </main>
 
   <footer>
-    &copy; 2025 Su Nimi — Inspiratsioon Dali & Wiiralt
-    <p><a href="gallery.html" style="color:#000;">Vaata galeriid →</a></p>
-<nav style="margin-top: 2rem;"><a href="gallery.html">Galerii</a> | <a href="blog.html">Blogi</a> | <a href="feedback.html">Tagasiside</a> | <a href="services.html">Teenused</a></nav>
-</footer>
+    &copy; 2025 Su Nimi · Inspiratsioon Dali & Wiiralt · <a href="thank-you.html">Aitäh-leht</a>
+  </footer>
 
 </body>
 </html>
