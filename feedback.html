@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tagasiside</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 1px solid black;
+    }
+
+    main {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    form label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tagasiside</h1>
+  </header>
+
+  <main>
+    <form>
+      <label for="name">Nimi</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="message">Sõnum</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+
+      <button type="submit">Saada</button>
+    </form>
+  </main>
+
+  <a href="index.html">← Tagasi avalehele</a>
+
+</body>
+</html>

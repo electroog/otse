@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galerii</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: #fff;
+      color: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: #fff;
+      border-bottom: 1px solid black;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galerii</h1>
+  </header>
+
+  <main>
+    <img src="art-element.svg" alt="Silmaelement" />
+    <img src="art-wiiralt-disney.svg" alt="Wiiralt Disney" />
+  </main>
+
+  <a href="index.html">← Tagasi avalehele</a>
+
+</body>
+</html>
